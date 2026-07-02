@@ -1,7 +1,11 @@
 /* ==========================================================================
-   IRON PULSE FITNESS - COMPONENT LOGIC & INTERACTION
-   Features: BMI, Slider, Schedule Timetable, Gallery, Forms & API
+   IRON PULSE FITNESS - CLIENT SIDE COMPONENTS & LOGIC
    ========================================================================== */
+
+// Configure base URL for backend connection (change this URL after deploying the Render backend)
+const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? ''
+  : 'https://iron-pulse-fitness-backend.onrender.com'; // Replace with your Render URL if deploying frontend to Netlify
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize Components
@@ -253,7 +257,7 @@ function initBmiCalculator() {
 
     // Save calculation metrics to Backend server
     try {
-      const response = await fetch('/api/bmi', {
+      const response = await fetch(`${API_BASE}/api/bmi`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ height, weight, age, gender: activeGender, bmi, category })
@@ -270,7 +274,7 @@ function initBmiCalculator() {
   async function fetchBmiHistory() {
     if (!historyList) return;
     try {
-      const response = await fetch('/api/bmi/history');
+      const response = await fetch(`${API_BASE}/api/bmi/history`);
       const data = await response.json();
       
       if (data.success && data.history.length > 0) {
@@ -536,7 +540,7 @@ function initFormSubmissions() {
       newsFeedback.className = 'form-feedback-message mt-small';
 
       try {
-        const response = await fetch('/api/newsletter', {
+        const response = await fetch(`${API_BASE}/api/newsletter`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email })
@@ -576,7 +580,7 @@ function initFormSubmissions() {
       contactFeedback.className = 'form-feedback-message mt-small';
 
       try {
-        const response = await fetch('/api/contact', {
+        const response = await fetch(`${API_BASE}/api/contact`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ name, email, phone, subject, message })
@@ -616,7 +620,7 @@ function initFormSubmissions() {
       modalFeedback.className = 'form-feedback-message mt-small';
 
       try {
-        const response = await fetch('/api/inquiry', {
+        const response = await fetch(`${API_BASE}/api/inquiry`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ name, email, phone, plan, message })
