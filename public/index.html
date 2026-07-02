@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron Pulse Fitness | Luxury Gym & Elite Wellness Club</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Transform your body and elevate your life at Iron Pulse Fitness. High-end training programs, elite personal trainers, state-of-the-art facilities, and premium wellness spaces.">
+  <meta name="keywords" content="luxury gym, elite fitness, personal training, bodybuilding, crossfit, yoga, HIIT, wellness club, Iron Pulse Fitness">
+  <meta name="author" content="Iron Pulse Fitness">
+  <link rel="canonical" href="http://localhost:5000/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:5000/">
+  <meta property="og:title" content="Iron Pulse Fitness | Luxury Gym & Elite Wellness Club">
+  <meta property="og:description" content="Transform your body and elevate your life. Experience high-end gym spaces, custom programs, and personal coaching.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://localhost:5000/">
+  <meta property="twitter:title" content="Iron Pulse Fitness | Luxury Gym & Elite Wellness Club">
+  <meta property="twitter:description" content="Transform your body and elevate your life. Experience high-end gym spaces, custom programs, and personal coaching.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Fonts (Headings: Bebas Neue, Body: Poppins, Numbers: Oswald) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Premium Preloader -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="pulse-text">IRON</span><span class="orange-text">PULSE</span>
+      </div>
+      <div class="loader-progress">
+        <div class="loader-bar"></div>
+        <div class="loader-number" id="loader-num">0%</div>
+      </div>
+      <div class="loader-tagline">TRANSFORM YOUR BODY. ELEVATE YOUR LIFE.</div>
+    </div>
+    <div class="loader-bg-slice"></div>
+  </div>
+
+  <!-- Sticky Solid Premium Navigation Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="/" class="brand-logo">
+        <span class="logo-pulse">IRON</span><span class="logo-accent">PULSE</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="/" class="nav-link active">Home</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
+          <li><a href="/programs" class="nav-link">Programs</a></li>
+          <li><a href="/membership" class="nav-link">Membership</a></li>
+          <li><a href="/trainers" class="nav-link">Trainers</a></li>
+          <li><a href="/schedule" class="nav-link">Schedule</a></li>
+          <li><a href="/bmi" class="nav-link">BMI Calculator</a></li>
+          <li><a href="/gallery" class="nav-link">Gallery</a></li>
+          <li><a href="/testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="/blog" class="nav-link">Blog</a></li>
+          <li><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Buttons & Hamburger -->
+      <div class="nav-actions">
+        <button class="btn btn-primary magnetic-btn open-modal-btn" data-plan="Premium">Join Now</button>
+        <button class="hamburger-menu" aria-label="Toggle Navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+      <ul>
+        <li><a href="/" class="mobile-link">Home</a></li>
+        <li><a href="/about" class="mobile-link">About</a></li>
+        <li><a href="/programs" class="mobile-link">Programs</a></li>
+        <li><a href="/membership" class="mobile-link">Membership</a></li>
+        <li><a href="/trainers" class="mobile-link">Trainers</a></li>
+        <li><a href="/schedule" class="mobile-link">Schedule</a></li>
+        <li><a href="/bmi" class="mobile-link">BMI Calculator</a></li>
+        <li><a href="/gallery" class="mobile-link">Gallery</a></li>
+        <li><a href="/testimonials" class="mobile-link">Reviews</a></li>
+        <li><a href="/blog" class="mobile-link">Blog</a></li>
+        <li><a href="/contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <button class="btn btn-primary open-modal-btn" data-plan="Basic">Membership Inquiries</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrappers -->
+  <main id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- ================= HERO SECTION ================= -->
+      <section id="home" class="hero-section">
+        <!-- Cinematic Background Video Loop -->
+        <div class="hero-video-container">
+          <video autoplay loop muted playsinline class="hero-video" poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1600&auto=format&fit=crop">
+            <source src="https://player.vimeo.com/external/494252666.hd.mp4?s=62abafafbe5d0824cfd8351586796c567848f95c&profile_id=172&oauth2_token_id=57447761" type="video/mp4">
+          </video>
+          <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Smoke Particles Canvas Layer -->
+        <canvas id="smoke-canvas"></canvas>
+
+        <div class="hero-content-wrapper container">
+          <div class="hero-text-content">
+            <h1 class="split-chars hero-title">PUSH BEYOND<br><span class="highlight-text">YOUR LIMITS.</span></h1>
+            <p class="hero-subtitle text-reveal">The ultimate destination for strength, high performance, and total body transformation. Elevate your physical power.</p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary btn-ripple magnetic-btn open-modal-btn" data-plan="Elite">Join Today <i class="fas fa-arrow-right"></i></button>
+              <a href="/programs" class="btn btn-outline magnetic-btn">Explore Programs</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Scroll Down Indicator -->
+        <a href="#stats" class="scroll-indicator">
+          <span class="scroll-mouse">
+            <span class="scroll-wheel"></span>
+          </span>
+          <span class="scroll-text">SCROLL TO DISCOVER</span>
+        </a>
+      </section>
+
+      <!-- ================= STATISTICS SECTION ================= -->
+      <section id="stats" class="stats-section py-large">
+        <div class="container grid grid-4">
+          <div class="stat-card reveal-item">
+            <div class="stat-num-box">
+              <span class="stat-number count-up" data-target="15">0</span><span class="stat-suffix">K+</span>
+            </div>
+            <div class="stat-label">Active Members</div>
+          </div>
+          <div class="stat-card reveal-item">
+            <div class="stat-num-box">
+              <span class="stat-number count-up" data-target="45">0</span><span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Expert Coaches</div>
+          </div>
+          <div class="stat-card reveal-item">
+            <div class="stat-num-box">
+              <span class="stat-number count-up" data-target="120">0</span><span class="stat-suffix">K</span>
+            </div>
+            <div class="stat-label">Sq. Ft Luxury Space</div>
+          </div>
+          <div class="stat-card reveal-item">
+            <div class="stat-num-box">
+              <span class="stat-number count-up" data-target="99">0</span><span class="stat-suffix">%</span>
+            </div>
+            <div class="stat-label">Success Rate</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= HOMEPAGE BRAND BANNER (NEW) ================= -->
+      <section class="home-brand-banner-section">
+        <div class="home-brand-banner" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1600&auto=format&fit=crop');">
+          <div class="banner-overlay"></div>
+          <div class="container banner-content text-center reveal-item">
+            <span class="section-tag">THE IRON SANCTUARY</span>
+            <h2 class="banner-title mb-medium">FORGE YOUR FUTURE. ELEVATE PERFORMANCE.</h2>
+            <p class="max-width-small text-gray mb-medium">Iron Pulse connects state-of-the-art training fields, recovery modules, and custom diagnostics into an absolute sanctuary for physical advancement.</p>
+            <a href="/about" class="btn btn-primary magnetic-btn">Discover Our Vision</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EDITORIAL PREVIEW TEASERS ================= -->
+      
+      <!-- Teaser 1: About -->
+      <section class="teaser-section py-large section-divider">
+        <div class="container grid grid-2 items-center">
+          <div class="teaser-text-box">
+            <span class="section-tag">ELITE HERITAGE</span>
+            <h2 class="section-title split-words">REDEFINING ELITE FITNESS WELLNESS.</h2>
+            <p class="text-gray mb-medium">We integrate custom progress tracking and certified sports science directly onto the weightlifting platforms. Reach targets backed by kinesiology.</p>
+            <a href="/about" class="btn btn-outline magnetic-btn">Read Our Story</a>
+          </div>
+          <div class="teaser-img-box reveal-item">
+            <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=800&auto=format&fit=crop" alt="Hard training" class="image-scale">
+          </div>
+        </div>
+      </section>
+
+      <!-- Teaser 2: Programs -->
+      <section class="teaser-section py-large bg-darker section-divider">
+        <div class="container grid grid-2 items-center">
+          <div class="teaser-img-box reveal-item">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop" alt="Workout barbell" class="image-scale">
+          </div>
+          <div class="teaser-text-box">
+            <span class="section-tag">DISCIPLINES</span>
+            <h2 class="section-title split-words">DEVELOPED COGNITIVE & PHYSICAL REGIMES.</h2>
+            <p class="text-gray mb-medium">From progressive strength conditioning and classic hypertrophy load strategies to metabolic cardiovascular conditioning, explore a curriculum engineered to achieve results.</p>
+            <a href="/programs" class="btn btn-outline magnetic-btn">Explore 6 Specialties</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teaser 3: Membership -->
+      <section class="teaser-section py-large section-divider">
+        <div class="container text-center max-width-small">
+          <span class="section-tag">CLUB ACCESS</span>
+          <h2 class="section-title split-words">EXCLUSIVITY IN EVERY SQUARE FOOT.</h2>
+          <p class="text-gray mb-medium">Review our Basic, Premium, and Elite Pulse membership access plans. Secure keys to high-performance facilities, recovery thermal lounges, and private training bookings.</p>
+          <a href="/membership" class="btn btn-primary magnetic-btn">View Membership Plans</a>
+        </div>
+      </section>
+
+      <!-- ================= FAQ SECTION ================= -->
+      <section class="faq-section py-large bg-darker section-divider">
+        <div class="container max-width-small">
+          <div class="text-center mb-large">
+            <div class="section-tag">HELP CENTER</div>
+            <h2 class="section-title split-words">FREQUENTLY ASKED QUESTIONS</h2>
+            <p class="section-subtitle">Everything you need to know about the sanctuary and membership services.</p>
+          </div>
+
+          <div class="faq-accordion reveal-item">
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span>Can I experience the facility before committing?</span>
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-content">
+                <p>Yes. Elite performance spaces are available for inspection by appointment. You can request a single guided day trial session by filling out our Inquiry form or contacting the Relations Desk.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span>What are the operating hours of Iron Pulse?</span>
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-content">
+                <p>We are open Monday to Friday from 05:00 AM to 11:00 PM, and Saturday & Sunday from 06:00 AM to 09:00 PM. Elite Pulse members receive 24/7 keycard access to private sections.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span>Are personal training sessions included in the plans?</span>
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-content">
+                <p>The standard Basic Pulse plan does not include regular 1-on-1 coaching. Our core Iron Club plan includes 2 monthly biometric coaching sessions, and the Elite Pulse plan offers 8 customized private training sessions monthly.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span>How does the Monthly / Yearly membership freeze work?</span>
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-content">
+                <p>Members can freeze accounts up to 60 days per calendar year. Request can be processed within our mobile application or by notifying guest services 5 days prior to billing cycles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= NEWSLETTER SECTION ================= -->
+      <section class="newsletter-section py-large">
+        <div class="container text-center max-width-small">
+          <div class="section-tag">JOIN THE PULSE LIST</div>
+          <h2 class="section-title split-words">STAY AHEAD OF the CURVE</h2>
+          <p class="mb-medium text-gray">Receive scientific training methodologies, nutrition guides, and exclusive event announcements directly from our coaches.</p>
+
+          <form id="newsletter-form" class="newsletter-form-box reveal-item">
+            <input type="email" id="newsletter-email" placeholder="Your premium email address" required aria-label="Newsletter Email">
+            <button type="submit" class="btn btn-primary btn-ripple">Subscribe <i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div id="newsletter-message" class="form-feedback-message mt-small"></div>
+        </div>
+      </section>
+
+      <!-- ================= FOOTER ================= -->
+      <footer class="main-footer">
+        <div class="container grid grid-4 py-large">
+          <div class="footer-col brand-col">
+            <a href="/" class="brand-logo mb-medium">
+              <span class="logo-pulse">IRON</span><span class="logo-accent">PULSE</span>
+            </a>
+            <p class="footer-brand-desc">An elite physical training sanctuary engineered for those who demand the absolute best in strength, conditioning, and recovery.</p>
+            <div class="social-links-footer mt-medium">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Training Programs</h4>
+            <ul>
+              <li><a href="/programs">Strength Training</a></li>
+              <li><a href="/programs">Hypertrophy & Bodybuilding</a></li>
+              <li><a href="/programs">CrossFit & Olympic Lifting</a></li>
+              <li><a href="/programs">High Intensity Cardio</a></li>
+              <li><a href="/programs">Chroma Yoga & Mobility</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/about">About Our Mission</a></li>
+              <li><a href="/membership">Membership Plans</a></li>
+              <li><a href="/schedule">Workout Schedules</a></li>
+              <li><a href="/bmi">BMI Calculator tool</a></li>
+              <li><a href="/gallery">Sanctuary Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Instagram @IronPulse</h4>
+            <div class="insta-feed-grid">
+              <div class="insta-feed-item"><img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=150&auto=format&fit=crop" alt="Insta 1"></div>
+              <div class="insta-feed-item"><img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=150&auto=format&fit=crop" alt="Insta 2"></div>
+              <div class="insta-feed-item"><img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=150&auto=format&fit=crop" alt="Insta 3"></div>
+              <div class="insta-feed-item"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=150&auto=format&fit=crop" alt="Insta 4"></div>
+              <div class="insta-feed-item"><img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=150&auto=format&fit=crop" alt="Insta 5"></div>
+              <div class="insta-feed-item"><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=150&auto=format&fit=crop" alt="Insta 6"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom py-small text-center">
+          <div class="container flex justify-between items-center text-gray">
+            <p>&copy; 2026 Iron Pulse Fitness. All rights reserved. Designed with premium motion.</p>
+            <div class="footer-legal-links">
+              <a href="#">Privacy Policy</a>
+              <span>|</span>
+              <a href="#">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- ================= MEMBERSHIP INQUIRY / BOOKING MODAL ================= -->
+  <div id="inquiry-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <h3 class="modal-title">REQUEST AN INVITATION</h3>
+        <p>Embark on your journey. Fill in your information below to submit a membership registration.</p>
+      </div>
+
+      <form id="modal-inquiry-form">
+        <div class="form-group">
+          <label for="modal-name">Full Name</label>
+          <input type="text" id="modal-name" placeholder="First and last name" required>
+        </div>
+        <div class="form-group">
+          <label for="modal-email">Email Address</label>
+          <input type="email" id="modal-email" placeholder="you@domain.com" required>
+        </div>
+        <div class="form-group">
+          <label for="modal-phone">Phone Number</label>
+          <input type="tel" id="modal-phone" placeholder="+1 (555) 000-0000" required>
+        </div>
+        <div class="form-group">
+          <label for="modal-plan">Preferred Access Tier</label>
+          <select id="modal-plan" required>
+            <option value="Basic">Basic Pulse — $99/mo</option>
+            <option value="Premium" selected>Iron Club — $179/mo</option>
+            <option value="Elite">Elite Pulse — $299/mo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="modal-message">Additional Request or Trainer Target</label>
+          <textarea id="modal-message" rows="3" placeholder="Tell us about your fitness targets, previous injuries, or if you wish to request a specific coach."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-ripple btn-block">Submit Membership Registration <i class="fas fa-paper-plane"></i></button>
+      </form>
+      <div id="modal-feedback-message" class="form-feedback-message mt-small"></div>
+    </div>
+  </div>
+
+  <!-- GSAP Core Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  
+  <!-- GSAP ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Lenis Smooth Scrolling Library -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+  <!-- Core Javascript files -->
+  <script src="/js/main.js"></script>
+  <script src="/js/components.js"></script>
+</body>
+</html>

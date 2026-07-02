@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanctuary Gallery | Iron Pulse Fitness</title>
+  
+  <meta name="description" content="View high-resolution photography of the weightlifting fields, cardio suites, and cryotherapy chambers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Premium Sticky Navbar -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="/" class="brand-logo">
+        <span class="logo-pulse">IRON</span><span class="logo-accent">PULSE</span>
+      </a>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
+          <li><a href="/programs" class="nav-link">Programs</a></li>
+          <li><a href="/membership" class="nav-link">Membership</a></li>
+          <li><a href="/trainers" class="nav-link">Trainers</a></li>
+          <li><a href="/schedule" class="nav-link">Schedule</a></li>
+          <li><a href="/bmi" class="nav-link">BMI Calculator</a></li>
+          <li><a href="/gallery" class="nav-link active">Gallery</a></li>
+          <li><a href="/testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="/blog" class="nav-link">Blog</a></li>
+          <li><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary magnetic-btn open-modal-btn" data-plan="Premium">Join Now</button>
+        <button class="hamburger-menu" aria-label="Toggle Navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+      <ul>
+        <li><a href="/" class="mobile-link">Home</a></li>
+        <li><a href="/about" class="mobile-link">About</a></li>
+        <li><a href="/programs" class="mobile-link">Programs</a></li>
+        <li><a href="/membership" class="mobile-link">Membership</a></li>
+        <li><a href="/trainers" class="mobile-link">Trainers</a></li>
+        <li><a href="/schedule" class="mobile-link">Schedule</a></li>
+        <li><a href="/bmi" class="mobile-link">BMI Calculator</a></li>
+        <li><a href="/gallery" class="mobile-link">Gallery</a></li>
+        <li><a href="/testimonials" class="mobile-link">Reviews</a></li>
+        <li><a href="/blog" class="mobile-link">Blog</a></li>
+        <li><a href="/contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <button class="btn btn-primary open-modal-btn" data-plan="Basic">Membership Inquiries</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- ================= GALLERY MASONRY ================= -->
+      <section id="gallery" class="gallery-section py-large bg-darker">
+        <!-- Page Banner -->
+        <div class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1600&auto=format&fit=crop');">
+          <div class="banner-overlay"></div>
+          <div class="container banner-content">
+            <h2 class="banner-title">SANCTUARY GALLERY</h2>
+            <div class="banner-breadcrumbs">
+              <a href="/">HOME</a> <i class="fas fa-chevron-right"></i> <span>OUR PREMIUM DESIGN</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center mb-large">
+          <div class="section-tag">SPATIAL GALLERY</div>
+          <h2 class="section-title split-words">ELITE PERFORMANCE FLOORS</h2>
+          <p class="section-subtitle">Examine the aesthetic layout and advanced equipment options across our properties.</p>
+        </div>
+
+        <!-- Gallery category filters -->
+        <div class="gallery-filters-wrapper reveal-item">
+          <button class="gallery-filter-btn active" data-filter="all">All Areas</button>
+          <button class="gallery-filter-btn" data-filter="weight">Strength Floors</button>
+          <button class="gallery-filter-btn" data-filter="cardio">Cardio Zones</button>
+          <button class="gallery-filter-btn" data-filter="recovery">Recovery Spas</button>
+          <button class="gallery-filter-btn" data-filter="spin">Spin Studios</button>
+        </div>
+
+        <!-- Luxury Masonry Photo Grid -->
+        <div class="container">
+          <div class="gallery-grid-masonry reveal-item">
+            <!-- Grid Item 1 -->
+            <div class="gallery-item-wrapper filter-weight">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=600&auto=format&fit=crop" alt="Heavy Strength Platform" class="gallery-img">
+              <div class="gallery-img-overlay">
+                <span class="gallery-img-tag">Strength Platform</span>
+                <h4>Elite Dumbbell Racks</h4>
+              </div>
+            </div>
+
+            <!-- Grid Item 2 -->
+            <div class="gallery-item-wrapper filter-cardio">
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600&auto=format&fit=crop" alt="Cardio Runner Room" class="gallery-img">
+              <div class="gallery-img-overlay">
+                <span class="gallery-img-tag">Cardio Suite</span>
+                <h4>Matrix Treadmill Systems</h4>
+              </div>
+            </div>
+
+            <!-- Grid Item 3 -->
+            <div class="gallery-item-wrapper filter-recovery">
+              <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=600&auto=format&fit=crop" alt="Yoga Zen Studio" class="gallery-img">
+              <div class="gallery-img-overlay">
+                <span class="gallery-img-tag">Wellness Center</span>
+                <h4>Yoga Meditation Room</h4>
+              </div>
+            </div>
+
+            <!-- Grid Item 4 -->
+            <div class="gallery-item-wrapper filter-spin">
+              <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=600&auto=format&fit=crop" alt="Spinning Studio" class="gallery-img">
+              <div class="gallery-img-overlay">
+                <span class="gallery-img-tag">Spin Studio</span>
+                <h4>Active Cycle Class</h4>
+              </div>
+            </div>
+
+            <!-- Grid Item 5 -->
+            <div class="gallery-item-wrapper filter-weight">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600&auto=format&fit=crop" alt="Barbell Lifting Station" class="gallery-img">
+              <div class="gallery-img-overlay">
+                <span class="gallery-img-tag">Olympic Lifting</span>
+                <h4>Bumper Plate Stations</h4>
+              </div>
+            </div>
+
+            <!-- Grid Item 6 -->
+            <div class="gallery-item-wrapper filter-recovery">
+              <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=600&auto=format&fit=crop" alt="Recovery Pool Plunge" class="gallery-img">
+              <div class="gallery-img-overlay">
+                <span class="gallery-img-tag">Thermal Recovery</span>
+                <h4>Pool & Cryotherapy Saunas</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FOOTER ================= -->
+      <footer class="main-footer">
+        <div class="container grid grid-4 py-large">
+          <div class="footer-col brand-col">
+            <a href="/" class="brand-logo mb-medium">
+              <span class="logo-pulse">IRON</span><span class="logo-accent">PULSE</span>
+            </a>
+            <p class="footer-brand-desc">An elite physical training sanctuary engineered for those who demand the absolute best in strength, conditioning, and recovery.</p>
+            <div class="social-links-footer mt-medium">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Training Programs</h4>
+            <ul>
+              <li><a href="/programs">Strength Training</a></li>
+              <li><a href="/programs">Hypertrophy & Bodybuilding</a></li>
+              <li><a href="/programs">CrossFit & Olympic Lifting</a></li>
+              <li><a href="/programs">High Intensity Cardio</a></li>
+              <li><a href="/programs">Chroma Yoga & Mobility</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/about">About Our Mission</a></li>
+              <li><a href="/membership">Membership Plans</a></li>
+              <li><a href="/schedule">Workout Schedules</a></li>
+              <li><a href="/bmi">BMI Calculator tool</a></li>
+              <li><a href="/gallery">Sanctuary Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Instagram @IronPulse</h4>
+            <div class="insta-feed-grid">
+              <div class="insta-feed-item"><img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=150&auto=format&fit=crop" alt="Insta 1"></div>
+              <div class="insta-feed-item"><img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=150&auto=format&fit=crop" alt="Insta 2"></div>
+              <div class="insta-feed-item"><img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=150&auto=format&fit=crop" alt="Insta 3"></div>
+              <div class="insta-feed-item"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=150&auto=format&fit=crop" alt="Insta 4"></div>
+              <div class="insta-feed-item"><img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=150&auto=format&fit=crop" alt="Insta 5"></div>
+              <div class="insta-feed-item"><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=150&auto=format&fit=crop" alt="Insta 6"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom py-small text-center">
+          <div class="container flex justify-between items-center text-gray">
+            <p>&copy; 2026 Iron Pulse Fitness. All rights reserved. Designed with premium motion.</p>
+            <div class="footer-legal-links">
+              <a href="#">Privacy Policy</a>
+              <span>|</span>
+              <a href="#">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Gallery Lightbox Modal Overlay -->
+  <div id="gallery-lightbox" class="lightbox-overlay">
+    <button class="lightbox-close-btn" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+    <button class="lightbox-arrow-btn prev-btn" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+    <div class="lightbox-content-box">
+      <img src="" id="lightbox-image" alt="Active lightbox image">
+      <div class="lightbox-caption" id="lightbox-caption">Caption Title</div>
+    </div>
+    <button class="lightbox-arrow-btn next-btn" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <div id="inquiry-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <h3 class="modal-title">REQUEST AN INVITATION</h3>
+        <p>Embark on your journey. Fill in your information below to submit a membership registration.</p>
+      </div>
+
+      <form id="modal-inquiry-form">
+        <div class="form-group">
+          <label for="modal-name">Full Name</label>
+          <input type="text" id="modal-name" placeholder="First and last name" required>
+        </div>
+        <div class="form-group">
+          <label for="modal-email">Email Address</label>
+          <input type="email" id="modal-email" placeholder="you@domain.com" required>
+        </div>
+        <div class="form-group">
+          <label for="modal-phone">Phone Number</label>
+          <input type="tel" id="modal-phone" placeholder="+1 (555) 000-0000" required>
+        </div>
+        <div class="form-group">
+          <label for="modal-plan">Preferred Access Tier</label>
+          <select id="modal-plan" required>
+            <option value="Basic">Basic Pulse — $99/mo</option>
+            <option value="Premium" selected>Iron Club — $179/mo</option>
+            <option value="Elite">Elite Pulse — $299/mo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="modal-message">Additional Request or Trainer Target</label>
+          <textarea id="modal-message" rows="3" placeholder="Tell us about your fitness targets, previous injuries, or if you wish to request a specific coach."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-ripple btn-block">Submit Membership Registration <i class="fas fa-paper-plane"></i></button>
+      </form>
+      <div id="modal-feedback-message" class="form-feedback-message mt-small"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/components.js"></script>
+</body>
+</html>
