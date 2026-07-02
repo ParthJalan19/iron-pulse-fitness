@@ -5,7 +5,7 @@
 // Configure base URL for backend connection (change this URL after deploying the Render backend)
 const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
   ? ''
-  : 'https://iron-pulse-fitness-backend.onrender.com'; // Replace with your Render URL if deploying frontend to Netlify
+  : 'https://iron-pulse-fitness-8zak.onrender.com'; // Replace with your Render URL if deploying frontend to Netlify
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize Components
